@@ -1,0 +1,277 @@
+﻿<html>
+	<head>
+		<title>Series</title>
+		
+		
+		
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		
+		<style>
+		@import url(https://fonts.googleapis.com/css?family=Montserrat);
+			body
+			{
+				margin: 0 auto;
+				background-color: #F0F0F0;
+			}
+			.tviso
+			{
+				width: 82%;
+				height: 100%;
+				float:left;
+			}
+			.tvisopag
+			{
+				width: 100%;
+				height: 99.5%;
+			}
+			.enlace
+			{
+				width: 18%;
+				height: 3%;
+				float: left;
+				background-color: #323232;
+				<!-- margin-left: 10px; -->
+				margin-top: 2px;
+				padding-top: 0.28%;
+				transition: all 0.2s;
+				cursor: pointer;
+				cursor: hand;
+			}
+			.enlace:hover
+			{
+				
+				background-color: #d83b3b;
+			}
+			
+			.enlaces
+			{
+				color: #ffffff;
+				text-decoration: none;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 20px;
+				
+			}
+			.enlaces a:visited{color: #ffffff;}
+			.enlaces a:link{color: #ffffff;}
+			.enlaces a:active{color: #ffffff;}
+			
+			.capitulo
+			{
+				width: 18%;
+				height: 3%;
+				float: left;
+				text-align: center;
+				background-color: #d83b3b;
+				<!-- margin-top: 8px; -->
+				padding-top: 0.28%;
+				transition: all 0.2s;
+			}
+			.elegir
+			{
+				width: 18%;
+				height: 3%;
+				float: left;
+				background-color: #525252;
+				<!-- margin-left: 10px; -->
+				margin-top: 2px;
+				padding-top: 0.5%;
+				transition: all 0.2s;
+				color: #a7a7a7;
+			}
+			select
+			{
+				background-color: #525252;
+				color: #ffffff;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 18px;
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+	<script>
+		function irCapitulo(){
+			numserie = document.getElementById("numserie").value;
+			numtemporada = document.getElementById("numtemporada").value;
+			numcapitulo = document.getElementById("numcapitulo").value;
+			
+			
+			
+						
+				if (numserie == ""){
+					alert("Seleccionar una serie");
+				}
+				else if (numserie != "de" && (numtemporada == "" || numcapitulo== "")){
+					window.open("http://seriesblanco.com/serie/" + numserie + "/serie.html");
+				}
+				else if (numserie != "de"){
+					window.open("http://seriesblanco.com/serie/" + numserie + "/temporada-" + numtemporada +"/capitulo-" + numcapitulo + "/serie.html");
+				}
+				
+				else if (numserie == "de" && (numtemporada == "" || numcapitulo== "")){
+					window.open("http://www.seriesflv.net/serie/deutschland-83.html");
+				}
+				else if (numserie == "de"){
+					window.open("http://www.seriesflv.net/ver/deutschland-83-" + numtemporada + "x" + numcapitulo + ".html");
+				}
+				
+		}
+	
+	
+	</script>
+				
+		<div class="tviso">
+			
+			<iframe class="tvisopag" src="https://es.tviso.com/home" ></iframe>
+					
+		</div>
+		
+		<div class="enlaces">
+			
+			<!-- <a href="http://seriesblanco.com/serie/1228/da-vincis-demons.html" target="_blank"><div class="enlace">
+				<center>Da Vinci's Demons</center>
+			</div></a>
+			
+			<a href="http://www.seriesflv.net/serie/deutschland-83.html" target="_blank"><div class="enlace">
+				<center>Deutschland 83</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/2872/fear-the-walking-dead.html" target="_blank"><div class="enlace">
+				<center>Fear the Walking Dead</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/235/gossip-girl.html" target="_blank"><div class="enlace">
+				<center>Gossip Girl</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/790/grimm.html" target="_blank"><div class="enlace">
+				<center>Grimm</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/789/once-upon-a-time-.html" target="_blank"><div class="enlace">
+				<center>Once Upon a Time</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/452/pretty-little-liars.html" target="_blank"><div class="enlace">
+				<center>Pretty Little Liars</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/1003/revolution-2012.html" target="_blank"><div class="enlace">
+				<center>Revolution</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/1634/silicon-valley-.html" target="_blank"><div class="enlace">
+				<center>Silicon Valley</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/3229/superstore.html" target="_blank"><div class="enlace">
+				<center>Superstore</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/534/the-big-bang-theory.html" target="_blank"><div class="enlace">
+				<center>The Big Bang Theory</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/1798/the-mysteries-of-laura.html" target="_blank"><div class="enlace">
+				<center>The Mysteries of Laura</center>
+			</div></a>
+			
+			<a href="http://seriesblanco.com/serie/577/the-walking-dead.html" target="_blank"><div class="enlace">
+				<center>The Walking Dead</center>
+			</div></a> -->
+		
+			<!-- <div class="capitulo">Elegir capítulo</div> -->
+			
+			<div class="elegir">
+			<center>Serie
+				<select id="numserie">
+					  <option value="" name="numeroserie"></option>
+					  <option value="1228" name="numeroserie">Da Vinci's Demons</option>
+					  <option value="de" name="numeroserie">Deutschland 83</option>
+					  <option value="2872" name="numeroserie">Fear the Walking Dead</option>
+					  <option value="235" name="numeroserie">Gossip Girl</option>
+					  <option value="790" name="numeroserie">Grimm</option>
+					  <option value="789" name="numeroserie">Once Upon a Time</option>
+					  <option value="452" name="numeroserie">Pretty Little Liars</option>
+					  <option value="1003" name="numeroserie">Revolution</option>
+					  <option value="1634" name="numeroserie">Silicon Valley</option>
+					  <option value="3229" name="numeroserie">Superstore</option>
+					  <option value="534" name="numeroserie">The Big Bang Theory</option>
+					  <option value="1798" name="numeroserie">The Mysteries of Laura</option>
+					  <option value="577" name="numeroserie">The Walking Dead</option>
+				</select></center></div>
+			
+			<div class="elegir">
+			<center>Temporada
+				<select id="numtemporada">
+					  <option value="" name="temporada"></option>
+					  <option value="1" name="temporada">1</option>
+					  <option value="2" name="temporada">2</option>
+					  <option value="3" name="temporada">3</option>
+					  <option value="4" name="temporada">4</option>
+					  <option value="5" name="temporada">5</option>
+					  <option value="6" name="temporada">6</option>
+					  <option value="7" name="temporada">7</option>
+					  <option value="8" name="temporada">8</option>
+					  <option value="9" name="temporada">9</option>
+					  <option value="10" name="temporada">10</option>
+					  <option value="11" name="temporada">11</option>
+					  <option value="12" name="temporada">12</option>
+					  <option value="13" name="temporada">13</option>
+					  <option value="14" name="temporada">14</option>
+					  <option value="15" name="temporada">15</option>
+					  <option value="16" name="temporada">16</option>
+					  <option value="17" name="temporada">17</option>
+					  <option value="18" name="temporada">18</option>
+					  <option value="19" name="temporada">19</option>
+					  <option value="20" name="temporada">20</option>
+					  
+				</select></center></div>
+				
+				<div class="elegir">
+				<center>Capítulo 
+				<select id="numcapitulo">
+					  <option value="" name="capitulo"></option>
+					  <option value="01" name="capitulo">1</option>
+					  <option value="02" name="capitulo">2</option>
+					  <option value="03" name="capitulo">3</option>
+					  <option value="04" name="capitulo">4</option>
+					  <option value="05" name="capitulo">5</option>
+					  <option value="06" name="capitulo">6</option>
+					  <option value="07" name="capitulo">7</option>
+					  <option value="08" name="capitulo">8</option>
+					  <option value="09" name="capitulo">9</option>
+					  <option value="10" name="capitulo">10</option>
+					  <option value="11" name="capitulo">11</option>
+					  <option value="12" name="capitulo">12</option>
+					  <option value="13" name="capitulo">13</option>
+					  <option value="14" name="capitulo">14</option>
+					  <option value="15" name="capitulo">15</option>
+					  <option value="16" name="capitulo">16</option>
+					  <option value="17" name="capitulo">17</option>
+					  <option value="18" name="capitulo">18</option>
+					  <option value="19" name="capitulo">19</option>
+					  <option value="20" name="capitulo">20</option>
+					  <option value="21" name="capitulo">21</option>
+					  <option value="22" name="capitulo">22</option>
+					  <option value="23" name="capitulo">23</option>
+					  <option value="24" name="capitulo">24</option>
+					  <option value="25" name="capitulo">25</option>
+					  
+				</select></center>
+				</div>
+				
+				
+				<div class="enlace" id="iracapitulo" onclick="irCapitulo()">
+					<center>Ir</center>
+				</div>
+			
+		
+		
+		
+		</div>
+	
+	</body>
+</html>
